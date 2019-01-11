@@ -9,6 +9,12 @@
       margin: 0 auto;
     }
 
+    #logo {
+      height: 8em;
+      padding: 0.25em 0;
+    }
+
+    .logo-container,
     .header,
     .subheader {
       text-align: center;
@@ -21,9 +27,10 @@
 
     .header {
       @include logo-font();
-      font-size: 4em;
+      font-size: 3em;
       letter-spacing: .2em;
       line-height: 1.33;
+      padding: 0.4em 0;
     }
 
     #login {

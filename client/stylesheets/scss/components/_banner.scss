@@ -8,8 +8,15 @@
     color: white;
     text-align: center;
     padding: 1.4em 0 1.4em;
+    line-height: 1.5;
+    
     a {
       color: white;
+    }
+
+    #logo {
+      height: 1.4em;
+      vertical-align: middle;
     }
   }
 }

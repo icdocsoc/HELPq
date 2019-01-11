@@ -8,7 +8,7 @@
 //------------------------------
 
 // Primary color of your brand (Used for primary buttons, glows, etc.)
-$brand-primary: #137DC3;
+$brand-primary: #EF0754;
 
 // Secondary color of your brand (used for secondary buttons)
 $brand-secondary: #FFBF0A;
@@ -47,7 +47,7 @@ $github-gray: #e4e4e4;
 
 // Styling for the fonts
 @mixin font-stack(){
-  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', sans-serif;
   font-weight: 300;
 }
 
@@ -82,7 +82,7 @@ $github-gray: #e4e4e4;
   // background-size: cover;
 
   // Background image that repeats
-  background: url(/assets/images/geometry2.png) repeat;
+  background: $brand-primary;
 }
 
 
@@ -99,7 +99,7 @@ $github-gray: #e4e4e4;
   // background: $brand-primary;
 
   // Repeated Background:
-  background: url(/assets/images/geometry2.png) repeat;
+  background: $brand-primary;
 }
 
 // Footer, which appears on each page.
