@@ -8,16 +8,16 @@
 //------------------------------
 
 // Primary color of your brand (Used for primary buttons, glows, etc.)
-$brand-primary: #EF0754;
+$brand-primary: rgb(7, 213, 180);
 
 // Secondary color of your brand (used for secondary buttons)
-$brand-secondary: #FFBF0A;
+$brand-secondary: #ffa600;
 
 // Success Buttons
 $brand-success: rgb(46, 204, 113);
 
 // Danger/Negative Buttons
-$brand-danger: #FF490A;
+$brand-danger: #ff490a;
 
 // Black
 $black: #2d2d2d;
@@ -46,13 +46,13 @@ $github-gray: #e4e4e4;
 //------------------------------
 
 // Styling for the fonts
-@mixin font-stack(){
-  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', sans-serif;
+@mixin font-stack() {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 300;
 }
 
-@mixin logo-font(){
-  font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+@mixin logo-font() {
+  font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 700;
 }
 
@@ -67,7 +67,6 @@ $github-gray: #e4e4e4;
 
 // The splash is the login page.
 #splash {
-
   // There are a few defaults that are here, which you can comment/uncomment,
   // but you should feel free to change this to whatever you want.
 
@@ -84,7 +83,6 @@ $github-gray: #e4e4e4;
   // Background image that repeats
   background: $brand-primary;
 }
-
 
 // Banner which appears under the nav, and on each page.
 #banner {
