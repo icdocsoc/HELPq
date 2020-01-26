@@ -1,17 +1,14 @@
-HELPq
-======
+# HELPq
 
 An extensible, customizable real-time queue system, built with [Meteor](https://www.meteor.com/)!
 
 ![Home Screen](./.docs/images/screenshots/home.png)
 
-What is this?
-------------
+## What is this?
 
 HELPq was originally built for [HackMIT](https://hackmit.org), but has been used at hackathons like [Blueprint](http://blueprint.hackmit.org), [Meteor Summer Hackathon 2015](http://meteorhack.meteor.com/), [WHACK](http://wellesleyhacks.org/), [MakeMIT](http://makemit.org/) and [WildHacks](http://wildhacks.org/) (among others!).
 
 It is a real-time help queue and mentor management application, targeted at hackathons and classrooms, where there is a need for issues to be claimed and satisfied within minutes. It includes a simple interface for requesting tickets, claiming tickets, administrating users/mentors, and examining metrics.
-
 
 It is built with an emphasis on three fundamental user experiences:
 
@@ -27,8 +24,7 @@ Mentors should not receive any type of push notifications when tickets are reque
 
 Mentors can claim tickets, complete tickets, or choose to reopen them. Mentors can only claim a single ticket at any given time. There is no ability to message a student through the app in order to encourage a mentor to find that student and help them in person. A student can, however, choose to include other contact information in case contact is needed to clarify location.
 
-Features
----------
+## Features
 
 ### Home
 
@@ -59,7 +55,6 @@ The current queue shows who is currently in the queue and which people are curre
 Mentors should be mobile, and the HELPq is designed for mentors to browse the help tickets on their smart phones.
 
 If a user is a mentor, they will have an inbox icon in the top right they can click to navigate to the mentor view. If the HELPq is being viewed on mobile or a very narrow window, the app is responsive and will pull up a navigation bar on the bottom for Home, Mentor, and Profile.
-
 
 #### Claim
 
@@ -122,36 +117,30 @@ The feedback section is a feed of all mentor feedback, with star rating and a no
 
 Settings allows you to adjust various settings in the queue. Right now, you can open/close the queue and set the time for when tickets expire.
 
-
-Usage Data
-----------
+## Usage Data
 
 We've used this at a bunch of hackathons and we have some data on them :)
 
-| Hackathon | Date | Response time average | median | stddev | Completion Time average | median | stddev | Rating Average | Users | Mentors | Tickets|
-|-----------|------|-------------------|--------|---------|---------------------|--------|---------|------------|-------|---------|--------|
-|**Blueprint High School Hackathon 2015** | 2/22/2015 | 5:11 | 1:26 | 9:54 | 10:37 | 6:29 | 13:23 | 4.9 | 193 | 64 | 170 |
-|**Meteor Summer Hackathon 2015** | 8/8/2015 | 6:21 | 2:29 | 10:58 | 5:46 | 1:26 | 12:03 | 4.09 | 68 | 66| 37 |
-|**HackMIT 2015** | 9/19/2015 | 9:37 | 2:48 | 28:00 | 16:30 | 10:01 | 22:59 | 4.7 | 425 | 242 | 502 |
-|**WHACK 2015** | 10/3/2015 | 7:55 | 4:56 | 12:30 | 18:19 | 13:02 | 17:27 | 4.9 | 87 | 39 | 94 |
-|**HackIllinois**| 2/19/2016 | 56:00 | 8:47 | 3:00:29 | 32:53 | 18:46 |  1:00:25 | 4.6 | 353 | 353 | 221 |
+| Hackathon                                | Date      | Response time average | median | stddev  | Completion Time average | median | stddev  | Rating Average | Users | Mentors | Tickets |
+| ---------------------------------------- | --------- | --------------------- | ------ | ------- | ----------------------- | ------ | ------- | -------------- | ----- | ------- | ------- |
+| **Blueprint High School Hackathon 2015** | 2/22/2015 | 5:11                  | 1:26   | 9:54    | 10:37                   | 6:29   | 13:23   | 4.9            | 193   | 64      | 170     |
+| **Meteor Summer Hackathon 2015**         | 8/8/2015  | 6:21                  | 2:29   | 10:58   | 5:46                    | 1:26   | 12:03   | 4.09           | 68    | 66      | 37      |
+| **HackMIT 2015**                         | 9/19/2015 | 9:37                  | 2:48   | 28:00   | 16:30                   | 10:01  | 22:59   | 4.7            | 425   | 242     | 502     |
+| **WHACK 2015**                           | 10/3/2015 | 7:55                  | 4:56   | 12:30   | 18:19                   | 13:02  | 17:27   | 4.9            | 87    | 39      | 94      |
+| **HackIllinois**                         | 2/19/2016 | 56:00                 | 8:47   | 3:00:29 | 32:53                   | 18:46  | 1:00:25 | 4.6            | 353   | 353     | 221     |
 
-Bring HELPq to your hackathon/classroom!
-========================================
+# Bring HELPq to your hackathon/classroom!
 
-Requirements
-------------
+## Requirements
 
 Make sure that you have `meteor` installed.
 You can install Meteor through their [website.](https://www.meteor.com/)
 
-
-Quickstart
-----------
+## Quickstart
 
 #### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ehzhang/HELPq/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/icdocsoc/HELPq/tree/master)
 
 When deploying to Heroku, you **must** set at least the `ROOT_URL` and `ADMIN_PASSWORD` environment variables.
 
@@ -170,8 +159,8 @@ Copy the `private/config.json.template` into `private/config.json`
   meteor
 ```
 
-Deploy
-------
+## Deploy
+
 **IMPORTANT**
 
 Without login configuration, you will only be able to login with the admin username and password specified in `private/config.json` (or the corresponding environment variables).
@@ -182,8 +171,7 @@ If you're not using Heroku, you can deploy with:
   meteor deploy <your domain name>.meteor.com
 ```
 
-Configuration
--------------
+## Configuration
 
 #### Login
 
@@ -205,17 +193,14 @@ To edit copy, edit `lib/constants.js`.
 
 In this file, you will find a place where you can change various strings across the site, including the title of your app.
 
-Orientation
------------
+## Orientation
 
 The queue has been found to be most effective with an orientation with mentors and a tight integration with the way a hackathon/classroom manages mentorship. If you'd like to talk about how this could work for your hackathon/classroom, don't hesitate to email me at [ehzhang@mit.edu](mailto:ehzhang@mit.edu)!
 
-Feedback
---------
+## Feedback
 
 Have you used HELPq or are planning to use it at your hackathon? I'd love to hear how effective it was, what kinds of metrics you got, and what kinds of things people wanted. Don't hesitate to email me at [ehzhang@mit.edu](mailto:ehzhang@mit.edu)!
 
-Contributing
-------------
+## Contributing
 
 I'd love to take pull requests! Please read the [Contributing Guide](CONTRIBUTING.md) first!
